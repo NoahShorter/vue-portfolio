@@ -5,7 +5,7 @@
 
             <!--Menu Button-->
             <button class="navbar-toggler menu-btn" id="menu-btn" type="button" data-toggle="collapse"
-                data-target="#collapseNav"  @click="toggleClass()">
+                data-target="#collapseNav"  @click="toggleClass()" ref="hamBtn">
                 <div class="animated-icon2" v-bind:class="{ open: isOpen }"><span></span><span></span><span></span><span></span></div>
             </button>
             <!--End Menu Button-->
@@ -31,7 +31,7 @@
                 <ul>
                     <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/Projects">Projects</router-link></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><router-link to="/Contact">Contact</router-link></li>
                 </ul>
             </div>
 
@@ -57,9 +57,14 @@ export default {
       },
       documentClick(e){
         let el = this.$refs.dropdownMenu
+        let okClick = this.$refs.dropdown
         let target = e.target
-        if ( (el !== target) && !el.contains(target)) {
-            this.$refs.dropdown.collapse('hide');
+        var elem = this.$refs.hamBtn;
+        if ( (el !== target) && !el.contains(target) && this.isOpen) {
+            elem.click();
+        }
+        else if (((okClick === target) || okClick.contains(target)) && this.isOpen){
+            elem.click();
         }
       }
   },
