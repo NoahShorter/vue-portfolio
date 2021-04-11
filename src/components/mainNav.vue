@@ -17,12 +17,12 @@
             <!--End Logo-->
 
             <!--Login Button-->
-            <div>
-                <a class="login" href="#">
+            <div class="spacer">
+                <!-- <a class="login" href="#">
                     <button class="login-btn">
                         Login
                     </button>
-                </a>
+                </a> -->
             </div>
             <!--End Login Button-->
 
@@ -38,7 +38,6 @@
         </nav>
         <!--End Top Menu Bar -->
 
-        <router-view/>
     </div>
 </template>
 
@@ -121,6 +120,10 @@ export default {
 
 #collapseNav li:active{
     background-color: rgba(255,255,255,0.2);
+}
+
+.spacer {
+    width: 52px;
 }
 
 .login-btn {

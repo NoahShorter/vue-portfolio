@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <mainNav/>
-    <router-view/>
+    <router-view class="data"/>
   </div>
 </template>
 
@@ -28,5 +28,11 @@ export default {
 body {
     background-color: #100e17 !important;
     color: white !important; 
+    padding-top: 65px;
+}
+
+.data {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 </style>
