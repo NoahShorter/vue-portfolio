@@ -29,9 +29,9 @@
             <!--Side Bar-->
             <div class="collapse navbar-collapse" id="collapseNav" ref="dropdown">
                 <ul>
-                    <li><router-link to="/">Home</router-link></li>
-                    <li><router-link to="/Projects">Projects</router-link></li>
-                    <li><router-link to="/Contact">Contact</router-link></li>
+                    <li><router-link class="link" to="/">Home</router-link></li>
+                    <li><router-link class="link" to="/Projects">Projects</router-link></li>
+                    <li><router-link class="link" to="/Contact">Contact</router-link></li>
                 </ul>
             </div>
 
@@ -92,6 +92,13 @@ export default {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    z-index: 1;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 #collapseNav {
@@ -153,7 +160,7 @@ export default {
 
 .nav-main {
     width: 100%;
-    padding: 5px 0px;
+    padding: 5px 5px;
     /*height: 60px;*/
     background: rgb(36,31,54);
     background: linear-gradient(83deg, rgba(36,31,54,1) 0%, rgba(29,24,46,1) 65%);

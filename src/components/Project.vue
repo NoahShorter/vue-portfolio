@@ -1,40 +1,56 @@
 <template>
-  <div class="project-whole"> 
-    <img class="image-fit" :src="require(`@/assets/${Img}`)" alt="image"/>
-    <p class="info">{{info}}</p>
+  <div class="project-whole card"> 
+    <img class="image-fit card-img-top" :src="require(`@/assets/${Img}`)" alt="image"/>
+    <div class="card-body">
+      <h5 class="card-title">{{title}}</h5>
+      <p class="info card-text">{{info}}</p>
+    </div>
   </div>
 </template>
 <script>
   export default {
     name: "Project",
-    props: [ 'Img', 'info'],
+    props: [ 'Img', 'title', 'info'],
   }
 </script>
 <style scoped>
 
 .project-whole {
-    border: 3px solid;
-    border-color: rgb(36,31,54);
     height: fit-content;
     width: 410px;
-    background: gray;
+    background: white;
     float: left;
     margin: 10px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.096);
+    overflow: hidden;
+}
+
+
+
+.card img {
+  -webkit-transition:all .5s ease; 
+  -moz-transition:all .5s ease; 
+  -o-transition:all .5s ease;
+  -ms-transition:all .5s ease; 
+}
+
+.card:hover img {
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
 }
 
 .image-fit{
   height: 250px;
-  width: 400px;
-  object-fit: cover;
+  width: 100%;
+  object-fit:contain;
 }
 
 .info{
-    background: rgb(36,31,54);
-    background: linear-gradient(83deg, rgba(36,31,54,1) 0%, rgba(29,24,46,1) 65%);
     margin: 0;
     padding: 5px;
-    border-top: 3px solid;
-    border-color: rgb(36,31,54);
 }
 
 </style>

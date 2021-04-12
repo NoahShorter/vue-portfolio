@@ -21,18 +21,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: white;
-  background-color: #100e17;
+  /*color: white;*/
+  /*background-color: #100e17;*/
 }
 
 body {
-    background-color: #100e17 !important;
-    color: white !important; 
+    background-color: #f5f5f5 !important;
+    color: black !important; 
     padding-top: 65px;
 }
 
 .data {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 </style>
