@@ -16,6 +16,9 @@ export default {
   name: 'Projects',
   components: {
     Project
+  },
+  created () {
+    document.title = 'Noah Shorter - Projects'
   }
 }
 </script>
