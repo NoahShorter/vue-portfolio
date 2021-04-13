@@ -9,6 +9,8 @@
           <p><label>Message</label><textarea name="Message"/></p>
           <p><button type="submit">Send</button></p>
         </form>
+        <div class="digits"><h4 class="labels">Email</h4><p>shorter.noah@gmail.com</p></div>
+        <div class="digits"><h4 class="labels">Phone Number</h4><p>541-561-8278</p></div>
     </div>
 </template>
 
@@ -45,6 +47,18 @@ button {
   height: 40px;
   justify-self: left;
   margin-right: 100%;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+h4 {
+  font-weight: 700;
+  color: rgb(58,124,165);
+}
+
+.digits {
+  float: left;
+  margin: auto;
 }
 
 .separator {

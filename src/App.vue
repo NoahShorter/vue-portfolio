@@ -34,6 +34,7 @@ html, body {
   flex-direction: column;
   height: 100%;
   justify-content: space-evenly;
+  font-family: 'Open Sans', sans-serif;
   /*color: white;*/
   /*background-color: #100e17;*/
 }
@@ -45,8 +46,8 @@ body {
 }
 
 .data {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 70px;
+  padding-right: 70px;
   
 }
 
