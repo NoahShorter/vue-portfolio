@@ -1,26 +1,39 @@
 <template>
   <div id="app">
     <mainNav/>
-    <router-view class="data"/>
+    <div class="wrapper">
+      <router-view class="data"/>
+    </div>
+    <MainFooter/>
   </div>
 </template>
 
 <script>
 import mainNav from './components/mainNav.vue'
+import MainFooter from './components/MainFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    mainNav
+    mainNav,
+    MainFooter
   }
 }
 </script>
 
 <style>
+html, body {
+  height: 100%;
+}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
   /*color: white;*/
   /*background-color: #100e17;*/
 }
@@ -32,7 +45,12 @@ body {
 }
 
 .data {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 15%;
+  padding-right: 15%;
+  
+}
+
+.wrapper {
+  flex: 1 0 auto;
 }
 </style>
