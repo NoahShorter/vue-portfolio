@@ -9,8 +9,8 @@
           <p><label>Message</label><textarea name="Message"/></p>
           <p><button type="submit" class="subButton">Send</button></p>
         </form>
-        <div class="digits"><h4 class="labels">Email</h4><p>shorter.noah@gmail.com</p></div>
-        <div class="digits"><h4 class="labels">Phone Number</h4><p>541-561-8278</p></div>
+        <!-- <div class="digits"><h4 class="labels">Email</h4><p>shorter.noah@gmail.com</p></div>
+        <div class="digits"><h4 class="labels">Phone Number</h4><p>541-561-8278</p></div> -->
     </div>
 </template>
 
@@ -56,7 +56,6 @@ h4 {
 }
 
 .digits {
-  float: left;
   margin: auto;
 }
 
