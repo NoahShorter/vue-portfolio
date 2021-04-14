@@ -161,7 +161,7 @@ export default {
 .nav-main {
     width: 100%;
     padding: 5px 5px;
-    /*height: 60px;*/
+    min-height: 60px;
     background: rgb(36,31,54);
     background: linear-gradient(83deg, rgba(36,31,54,1) 0%, rgba(29,24,46,1) 65%);
     /*background-color: #100e17;*/

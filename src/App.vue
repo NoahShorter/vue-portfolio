@@ -32,7 +32,7 @@ html, body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
   justify-content: space-evenly;
   font-family: 'Open Sans', sans-serif;
   /*color: white;*/
