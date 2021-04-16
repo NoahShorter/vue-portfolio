@@ -26,6 +26,13 @@ html, body {
   height: 100%;
 }
 
+.home {
+  background-image: url('./assets/tallwhitemountain.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,13 +49,14 @@ html, body {
 body {
     background-color: #f5f5f5 !important;
     color: black !important; 
-    padding-top: 65px;
+    padding-top: 60px;
+    height: 100%;
 }
 
 .data {
   padding-left: 70px;
   padding-right: 70px;
-  
+  height: 100%;
 }
 
 .wrapper {
