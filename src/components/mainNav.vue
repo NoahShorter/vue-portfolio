@@ -99,6 +99,8 @@ export default {
     display: block;
     width: 100%;
     height: 100%;
+    padding: 7px;
+    padding-left: 15px;
 }
 
 #collapseNav {
@@ -114,11 +116,7 @@ export default {
     text-decoration: none;
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#collapseNav li{
-    padding: 5px;
-    padding-left: 15px;
+    font-size: 20px;
 }
 
 #collapseNav li:hover{
@@ -162,9 +160,9 @@ export default {
     width: 100%;
     padding: 5px 5px;
     min-height: 60px;
-    background: rgb(36,31,54);
-    background: linear-gradient(83deg, rgba(36,31,54,1) 0%, rgba(29,24,46,1) 65%);
-    /*background-color: #100e17;*/
+    /* background: rgb(36,31,54);
+    background: linear-gradient(83deg, rgba(36,31,54,1) 0%, rgba(29,24,46,1) 65%); */
+    background-color: #223843;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;

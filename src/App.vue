@@ -2,7 +2,7 @@
   <div id="app">
     <mainNav/>
     <div class="wrapper">
-      <router-view class="data"/>
+      <router-view class="data" :class="{'negPad' : isHome}"/>
     </div>
     <MainFooter/>
   </div>
@@ -17,6 +17,21 @@ export default {
   components: {
     mainNav,
     MainFooter
+  },
+  data() {
+    return{
+      isHome: true
+    }
+  },
+  watch: {
+    '$route' () {
+      if(this.$route.path === '/'){
+        this.isHome = true;
+      }
+      else {
+        this.isHome = false;
+      }
+    }
   }
 }
 </script>
@@ -27,10 +42,10 @@ html, body {
 }
 
 .home {
-  background-image: url('./assets/tallwhitemountain.jpg');
+  /* background-image: url('./assets/tallwhitemountain.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 #app {
@@ -47,7 +62,7 @@ html, body {
 }
 
 body {
-    background-color: #f5f5f5 !important;
+    background-color: #EFF1F3 !important;
     color: black !important; 
     padding-top: 60px;
     height: 100%;
@@ -57,6 +72,11 @@ body {
   padding-left: 70px;
   padding-right: 70px;
   height: 100%;
+}
+
+.negPad {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .wrapper {
