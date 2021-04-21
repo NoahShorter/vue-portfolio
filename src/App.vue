@@ -63,7 +63,7 @@ html, body {
 
 body {
     background-color: #EFF1F3 !important;
-    color: black !important; 
+    color: #223843 !important; 
     padding-top: 60px;
     height: 100%;
 }

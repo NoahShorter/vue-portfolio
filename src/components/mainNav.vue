@@ -12,7 +12,7 @@
 
             <!--Logo-->
             <div class="logo">
-                <h4>NS</h4>
+                <router-link to="/"><h4>NS</h4></router-link>
             </div>
             <!--End Logo-->
 
@@ -183,6 +183,11 @@ export default {
     color: #fff;
     font-family: LexendZetta;
     font-size: 40px;
+    user-select: none;
+}
+
+.logo a {
+    text-decoration: none;
 }
 
 .login {

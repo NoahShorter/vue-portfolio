@@ -5,7 +5,7 @@
               <h1 class="name">I'm Noah Shorter</h1>
               <divider :red=239 :green=241 :blue=243 />
               <p class="description">
-              Software Engineer <br>Developer <br>All around great guy
+              Software Engineer <br>Adaptable Employee <br>All around great guy
               </p>
             </div>
             <img class="headshot" src="../assets/headshot.jpg">

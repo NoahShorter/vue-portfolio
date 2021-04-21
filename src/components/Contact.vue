@@ -1,7 +1,7 @@
 <template>
     <div class="Contact">
         <h2>CONTACT ME</h2>
-        <div class="separator">/ /</div>
+        <divider :red=34 :green=56 :blue=67 />
         <form name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact"/>
           <p><label>Name *</label><input required name="Name" type="text"/></p>
@@ -15,8 +15,13 @@
 </template>
 
 <script>
+import divider from "./Divider.vue"
+
 export default {
   name: 'Contact',
+  components: {
+    divider
+  },
   created () {
     document.title = 'Noah Shorter - Contact'
   }
@@ -28,6 +33,11 @@ export default {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+}
+
+.Contact h2 {
+  font-weight: 700;
 }
 
 .Contact input, textarea {
@@ -59,34 +69,4 @@ h4 {
   margin: auto;
 }
 
-.separator {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-
-.separator::before {
-  height: 1px;
-  width: 100%;
-  content: '';
-  flex: 1;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-}
-
-.separator::after {
-  height: 1px;
-  width: 100%;
-  content: '';
-  flex: 1;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-}
-
-.separator:not(:empty)::before {
-  margin-right: .25em;
-}
-
-.separator:not(:empty)::after {
-  margin-left: .25em;
-}
 </style>

@@ -26,6 +26,9 @@ export default {
     Interests,
     aboutMe,
   },
+  created () {
+    document.title = 'Noah Shorter - Home'
+  }
 }
 </script>
 <style scoped>

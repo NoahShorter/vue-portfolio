@@ -35,6 +35,7 @@
     width: 50%;
     max-width: 800px;
     margin-right: auto;
+    text-align: left;
 }
 
 .description h2 {
