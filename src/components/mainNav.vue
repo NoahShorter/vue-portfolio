@@ -4,8 +4,8 @@
         <nav class="navbar nav-main" ref="dropdownMenu">
 
             <!--Menu Button-->
-            <button class="navbar-toggler menu-btn" id="menu-btn" type="button" data-toggle="collapse"
-                data-target="#collapseNav"  @click="toggleClass()" ref="hamBtn">
+            <button class="navbar-toggler menu-btn" id="menu-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNav"  @click="toggleClass()" ref="hamBtn">
                 <div class="animated-icon2" v-bind:class="{ open: isOpen }"><span></span><span></span><span></span><span></span></div>
             </button>
             <!--End Menu Button-->

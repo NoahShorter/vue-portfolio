@@ -1,6 +1,6 @@
 <template>
   <div class="project-whole card"> 
-    <img class="image-fit card-img-top" :src="require(`@/assets/${Img}`)" alt="image"/>
+    <img class="image-fit card-img-top" :src="`./src/assets/${Img}`" alt="image"/>
     <div class="card-body">
       <h5 class="card-title">{{title}}</h5>
       <p class="info card-text">{{info}}</p>
@@ -8,6 +8,7 @@
   </div>
 </template>
 <script>
+import {} from '@/components/Home.vue'
   export default {
     name: "Project",
     props: [ 'Img', 'title', 'info'],

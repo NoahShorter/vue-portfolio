@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/NSLogoPurple.ico">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>NSLogoPurple.ico">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,18 +13,13 @@
     <title>Home</title>
   </head>
   <body>
-    
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
-    
+    <script type="module" src="/src/main.js"></script>
   </body>
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
     <input type="hidden" name="form-name" value="contact"/>
     <input name="Name" type="text"/>
     <input name="Email" type="email"/>
-    <textarea name="Message"/>
+    <!-- <textarea name="Message"> -->
   </form>
 </html>
