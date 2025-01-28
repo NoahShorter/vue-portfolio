@@ -26,6 +26,7 @@
 .footer {
   /* flex-shrink: 0; */
   padding-top: 10px;
+  padding-bottom: 21px;
   /* background: rgb(36,31,54);
   background: linear-gradient(83deg, rgba(36,31,54,1) 0%, rgba(29,24,46,1) 65%); */
   background-color: #223843;
@@ -51,7 +52,6 @@
 
 .routerMap {
   margin-top: 10px;
-  margin-bottom: 20px;
 }
 
 .routerMap li{
