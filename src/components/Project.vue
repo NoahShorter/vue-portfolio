@@ -1,17 +1,17 @@
 <template>
   <div class="project-whole card"> 
-    <img class="image-fit card-img-top" :src="require(`@/assets/${Img}`)" alt="image"/>
+    <img class="image-fit card-img-top" :src="getImageUrl(Img)" alt="image"/>
     <div class="card-body">
-      <h5 class="card-title">{{title}}</h5>
-      <p class="info card-text">{{info}}</p>
+      <h5 class="card-title">{{props.title}}</h5>
+      <p class="info card-text">{{props.info}}</p>
     </div>
   </div>
 </template>
-<script>
-  export default {
-    name: "Project",
-    props: [ 'Img', 'title', 'info'],
-  }
+<script setup>
+const props = defineProps([ 'Img', 'title', 'info'])
+function getImageUrl(name) {
+  return new URL(`../assets/${name}`, import.meta.url).href
+}
 </script>
 <style scoped>
 

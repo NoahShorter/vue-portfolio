@@ -1,15 +1,14 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router.js'
-import SvgFiller from 'vue-svg-filler'
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css"
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
-Vue.component('svg-filler', SvgFiller)
+const app = createApp(App);
 
-new Vue({
-  render: h => h(App),
-  router,
-}).$mount('#app')
+app.use(router)
+
+app.mount('#app')

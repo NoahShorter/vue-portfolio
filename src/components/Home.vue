@@ -13,23 +13,26 @@
       <aboutMe/>
     </div>
 </template>
-<script>
+<script setup>
 import IntroTop from "./IntroTop.vue"
 import Interests from "./Interests.vue"
 //import divider from "./Divider.vue"
 import aboutMe from "./AboutMe.vue"
 
-export default {
-  name: 'Home',
-  components: {
-    IntroTop,
-    Interests,
-    aboutMe,
-  },
-  created () {
-    document.title = 'Noah Shorter - Home'
-  }
-}
+console.log(import.meta.env.VITE_API_URL)
+
+// export default {
+//   name: 'Home',
+//   components: {
+//     IntroTop,
+//     Interests,
+//     aboutMe,
+//   },
+//   created () {
+//     document.title = 'Noah Shorter - Home'
+//     console.log(import.meta.env.VITE_API_URL)
+//   }
+// }
 </script>
 <style scoped>
 

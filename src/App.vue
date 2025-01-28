@@ -52,9 +52,9 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* min-height: 100%; */
   justify-content: space-evenly;
   font-family: 'Open Sans', sans-serif;
   /*color: white;*/
@@ -80,6 +80,6 @@ body {
 }
 
 .wrapper {
-  flex: 1 0 auto;
+  min-height: calc(100vh - 187px);
 }
 </style>
